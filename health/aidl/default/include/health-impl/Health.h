@@ -46,6 +46,9 @@ class Health : public BnHealth, public HalHealthLoopCallback {
     Health(std::string_view instance_name, std::unique_ptr<struct healthd_config>&& config);
     virtual ~Health();
 
+    // Internal startup hook; not a new AIDL method. Call before StartLoop().
+    ::android::status_t PrimeBatteryLevel();
+
     ndk::ScopedAStatus registerCallback(
             const std::shared_ptr<IHealthInfoCallback>& callback) override;
     ndk::ScopedAStatus unregisterCallback(
