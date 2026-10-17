@@ -16,6 +16,8 @@
 
 #pragma once
 
+#include <sched.h>
+
 #include <memory>
 #include <utility>
 
