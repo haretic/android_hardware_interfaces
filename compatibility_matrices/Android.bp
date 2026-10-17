@@ -135,12 +135,18 @@ vintf_compatibility_matrix {
     name: "framework_compatibility_matrix.202604.xml",
     stem: "compatibility_matrix.202604.xml",
     srcs: ["compatibility_matrix.202604.xml"],
-    kernel_configs: ["kernel_config_c_6.18"],
+    kernel_configs: [
+        "kernel_config_c_6.18",
+        "kernel_config_c_7.1",
+    ],
 }
 
 vintf_compatibility_matrix {
     name: "framework_compatibility_matrix.202704.xml",
     stem: "compatibility_matrix.202704.xml",
     srcs: ["compatibility_matrix.202704.xml"],
-    kernel_configs: ["kernel_config_c_6.18"],
+    kernel_configs: [
+        "kernel_config_c_6.18",
+        "kernel_config_c_7.1",
+    ],
 }
