@@ -68,6 +68,10 @@ Health::Health(std::string_view instance_name, std::unique_ptr<struct healthd_co
 
 Health::~Health() {}
 
+::android::status_t Health::PrimeBatteryLevel() {
+    return battery_monitor_.primeBatteryLevel();
+}
+
 static inline ndk::ScopedAStatus TranslateStatus(::android::status_t err) {
     switch (err) {
         case ::android::OK:
