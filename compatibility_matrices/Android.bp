@@ -138,6 +138,7 @@ vintf_compatibility_matrix {
     kernel_configs: [
         "kernel_config_c_6.18",
         "kernel_config_c_7.1",
+        "kernel_config_c_7.3",
     ],
 }
 
@@ -148,5 +149,6 @@ vintf_compatibility_matrix {
     kernel_configs: [
         "kernel_config_c_6.18",
         "kernel_config_c_7.1",
+        "kernel_config_c_7.3",
     ],
 }
